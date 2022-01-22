@@ -1,0 +1,16 @@
+.search_bar {
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.search_input {
+  background: #e0e1e3;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  outline: none;
+  height: 100%;
+  width: 100%;
+}
