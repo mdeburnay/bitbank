@@ -27,7 +27,8 @@
   font-weight: 400;
 }
 
-.neutral {
-  color: orange;
-  font-weight: 400;
+.pageNum {
+  font-size: 3rem;
+  align-self: center;
+  color: #666666;
 }

@@ -1,6 +1,6 @@
 import styles from "./SearchBar.module.css";
 
-const SearchBar = ({ props }: any) => {
+const SearchBar = ({ ...props }: any) => {
   return (
     <div className={styles.search_bar}>
       <input
