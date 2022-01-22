@@ -4,7 +4,6 @@ import styles from "./Coin.module.css";
 interface ICoinProps {
   name: string;
   current_price: number;
-  symbol: string;
   market_cap_change_24h: number;
   image: string;
   price_change_24h: number;
@@ -14,7 +13,6 @@ interface ICoinProps {
 const Coins = ({
   name,
   current_price,
-  symbol,
   market_cap_change_24h,
   image,
   price_change_24h,
