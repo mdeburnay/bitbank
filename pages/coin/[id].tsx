@@ -10,9 +10,11 @@ const Coin = ({ coin }: any) => {
           className={styles.coin_image}
         />
         <h1 className={styles.coin_name}>{coin.name}</h1>
-        <p className={styles.coin_ticker}>{coin.symbol}</p>
+        <p className={styles.coin_ticker}>
+          {coin.symbol.toUpperCase()}
+        </p>
         <p className={styles.coin_current}>
-          {coin.market_data.current_price.usd}
+          £{coin.market_data.current_price.gbp}
         </p>
       </div>
     </div>

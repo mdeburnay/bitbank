@@ -10,6 +10,7 @@ Things I would like to do in the future:
 - Add a title bar to the coin table in order to correctly reference the table contents (e.g. Price, Market Cap, Logo etc..)
 - Bringing all crypto coins in and then paginating the array in the frontend would be nice. This will allow me to search through the entire list of coins, rather than just the 50 that are rendered per page.
 - Adding unit tests
+- Add an error page which the user is redirected to should the API call fail
 
 ## Getting Started
 
