@@ -42,19 +42,16 @@ const Home = (props: any) => {
 };
 
 //Fetching posts in get Intial Props to make the app seo friendly
-Home.getInitialProps = async ({
-  query: { page = 1, currency = "gbp" },
-}: any) => {
+Home.getInitialProps = async ({ query: { page = 1 } }: any) => {
   try {
     const res = await fetch(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=50&page=${page}&sparkline=false`
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=gbp&order=market_cap_desc&per_page=50&page=${page}&sparkline=false`
     );
     const data = await res.json();
 
     return {
       crypto: data,
       page: parseInt(page),
-      currency: currency,
     };
   } catch (e) {
     console.log(e);
